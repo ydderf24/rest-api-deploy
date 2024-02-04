@@ -110,7 +110,7 @@ app.delete('/movies/:id', (req, res) => {
 })
 
 // eslint-disable-next-line no-undef
-const PORT = process.env.port ?? 1234
+const PORT = process.env.PORT ?? 1234
 
 app.listen(PORT, () => {
     console.log('Ingresa a http://localhost:' + PORT)
