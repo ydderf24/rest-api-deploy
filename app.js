@@ -113,5 +113,5 @@ app.delete('/movies/:id', (req, res) => {
 const PORT = process.env.port ?? 1234
 
 app.listen(PORT, () => {
-    console.log('Ingresa a http://localhost:' + port)
+    console.log('Ingresa a http://localhost:' + PORT)
 })
