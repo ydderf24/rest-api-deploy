@@ -1,0 +1,22 @@
+###Get para ver todas las peliculas del json
+GET http://192.168.5.37:1234/movies
+
+
+###Get para consultar una pelicula por id
+GET http://192.168.5.37:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+###Get para consultar peliculas por genero
+GET http://192.168.5.37:1234/movies?genre=Drama
+
+####POST crear una pelicula
+POST http://192.168.5.37:1234/movies
+Content-Type: application/json
+{
+  "title": "La ciudad de los niños perdidos",
+  "year": 1995,
+  "director": "Marc Caro",
+  "duration": 110,
+  "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/The_City_of_Lost_Children_movie_poster.jpg/1200px-The_City_of_Lost_Children_movie_poster.jpg",
+  "genre": ["Fantasia", "Aventura"],
+  "rate": 7.7
+}
